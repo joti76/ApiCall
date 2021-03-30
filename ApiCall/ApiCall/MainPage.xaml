@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApiCall.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Simple WebApi Call!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="randomImageButton" Padding="15" Margin="15" Text="Reload random Image" Clicked="randomImageButton_Clicked"/>
+            </StackLayout>
+
+            <Image Grid.Row="1" x:Name="dogImage" Margin="20"  />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
